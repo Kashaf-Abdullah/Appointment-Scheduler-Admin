@@ -65,7 +65,7 @@ const Cards_Vortragsthement = () => {
  text="Bereit, deine Veranstaltung zu revolutionieren? Buche mich jetzt als Sprecherin und lass uns gemeinsam die Zukunft von Kl, Generation Z und Social Media erkunden! Mit fesselnden Einblicken und fundiertem Fachwissen bringe ich frische Perspektiven in deine Veranstaltung."
  btn="Jetzt buchen" 
  btn_class="in-btn" 
- btnlink="https://premium-speakers.com/referent-moderator/livia-schroeder/"
+ btnlink=""
  />
  </div>
 

@@ -61,8 +61,45 @@ const loginUser = async (req, res) => {
     });
   }
 };
+const registerUser = async (req, res) => {
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({ success: false, msg: "Validation error", errors: errors.array() });
+    }
 
+    const { name, email, password } = req.body;
+
+    const existingUser = await User.findOne({ email });
+    if (existingUser) {
+      return res.status(400).json({ success: false, msg: "Email already in use" });
+    }
+
+    const hashedPassword = await bcrypt.hash(password, 10);
+
+    const newUser = new User({
+      name,
+      email,
+      password: hashedPassword,
+    });
+
+    await newUser.save();
+
+    const accessToken = await generateAccessToken(newUser);
+
+    return res.status(201).json({
+      success: true,
+      msg: "Registration successful",
+      accessToken: accessToken,
+      tokenType: "Bearer",
+      data: newUser,
+    });
+  } catch (error) {
+    return res.status(400).json({ success: false, msg: error.message });
+  }
+};
 module.exports = {
  
   loginUser,
+  registerUser
 };

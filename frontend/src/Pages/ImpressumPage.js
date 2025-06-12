@@ -7,25 +7,26 @@ const ImpressumPage = () => {
     <div style={{ display: "flex", flexDirection: "column", minHeight: "100vh" }}>
       <Container style={{ flex: "1" }}>
         <h3 className="heading" style={{ margin: "7rem 0 3rem 0" }}>
-          Impressum
+          Lorem, ipsum dolor.
         </h3>
         <div className="row justify-content-center" style={{ marginTop: "4rem" }}>
           <div className="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center">
             <div style={{ width: "15rem" }}>
-              <h4 style={{ margin: "1rem 0" }}>Angabe zur Firma:</h4>
+              <h4 style={{ margin: "1rem 0" }}> Lorem ipsum dolor sit.</h4>
               <p>
-                Livia Florina Schröder <br />
-                Seestrasse 65 <br />
-                Beinwil am See, 5712 <br />
-                Switzerland
+                Lorem ipsum dolor sit. <br />
+                Lorem, ipsum dolor. <br />
+                Lorem, ipsum.
+                 <br />
+               Lorem.
               </p>
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center">
             <div style={{ width: "15rem" }}>
-              <h4 style={{ margin: "1rem 0" }}>Vertreten durch:</h4>
+              <h4 style={{ margin: "1rem 0" }}> Lorem, ipsum dolor.</h4>
               <p>
-                Livia Florina Schröder
+               Lorem ipsum dolor sit.
               </p>
             </div>
           </div>
@@ -33,16 +34,16 @@ const ImpressumPage = () => {
         <div className="row justify-content-center">
           <div className="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center">
             <div style={{ width: "15rem" }}>
-              <h4 style={{ margin: "1rem 0" }}>Kontakt:</h4>
+              <h4 style={{ margin: "1rem 0" }}>lorem</h4>
               <p>
-                info@livia-schroeder.ch
+                info@abc-admin.com
               </p>
             </div>
           </div>
           <div className="col-lg-6 col-md-6 col-sm-6 d-flex justify-content-center">
             <div style={{ width: "15rem" }}>
-              <h4 style={{ margin: "1rem 0" }}>Handelsregistereintrag:</h4>
-              <p>CH-400.1.609.581-0</p>
+              <h4 style={{ margin: "1rem 0" }}> Lorem ipsum dolor sit.</h4>
+              <p>00-3344-554545</p>
             </div>
           </div>
         </div>
