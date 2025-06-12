@@ -9,7 +9,7 @@ import Navbarr from "./components/Navbar";
 import { Routes, Route, BrowserRouter as Router, Navigate } from "react-router-dom";
 import { useState } from "react";
 function App() {
-  // State to track if user is logged in
+
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <Router>
